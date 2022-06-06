@@ -61,20 +61,28 @@
  9. Через cat добавить в текстовый файл tf_3.txt строку “the second 2”
    
        ```
-        echo -e '\nthe second 2' >> tf_3.txt`
+        cat >> tf_3.txt 
+        the second 2
+        
+        Ctrl+C
        ```
    
  10. Через cat добавить в текстовый файл tf_3.txt строку “the sec 2”
    
         ```
-         echo -e '\nthe sec 2' >> tf_3.txt
+         cat >> tf_3.txt 
+         the sec 2
+         
+         Ctrl+C
         ```
 
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
  
         ```
-         cd ..
-         echo -e '\nthe sec 3' >> tf_2.txt
+         cat >> tf_2.txt 
+         the sec 3
+         
+         Ctrl+C
         ```
    
  12. Через cat добавить в текстовый файл tf_3.txt строку "the SeCoNd 2" 
@@ -138,7 +146,7 @@
  17. Выйти из папки inner_dir_1
  
        ```
-        вышла из нее в п.13 с помощью команды cd ..
+        cd ..
        ```
    
  18. Вывести содержимое файла tf_3.txt в терминал.
