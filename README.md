@@ -33,8 +33,7 @@
     the third 3
     
   Ctrl+C
-  
-  ```
+ ```
  7. Зайти в папку inner_dir_1
  
    `cd inner_dir_1`
@@ -49,7 +48,6 @@
      any line 3
      
    Ctrl+C
-   
   ```
  9. Через cat добавить в текстовый файл tf_3.txt строку “the second 2”
    
