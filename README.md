@@ -60,14 +60,23 @@
    `echo -e '\nthe sec 2' >> tf_3.txt`
 
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
-   `cd ..`
-   `echo -e '\nthe sec 3' >> tf_2.txt`
+   ```
+    cd ..
+    echo -e '\nthe sec 3' >> tf_2.txt
+   ```
+   
  12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
-   `cd inner_dir_1`
-   `echo -e '\nthe SeCoNd 2' >> tf_3.txt`
+   ```
+    cd inner_dir_1
+    echo -e '\nthe SeCoNd 2' >> tf_3.txt
+    
+   ```
  13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
-   `cd ..`
-   `echo -e '\nthe seConD 2' >> tf_2.txt`
+   
+   ```
+    cd ..
+    echo -e '\nthe seConD 2' >> tf_2.txt
+   ```
  14. Сделать текстовый файл tf_4.txt в котором будет 15 строк.
    ```
     cat >> tf_4.txt
