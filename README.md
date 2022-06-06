@@ -265,25 +265,25 @@
  36. Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”
 
        ```
-        grep -r -l 'sec' | xargs -I '{}' mv '{}' /c/Users/anduser/terminal_hw_2/dir_1/inner_dir_2
+        grep -rl 'sec' | xargs -I '{}' mv '{}' inner_dir_2
        ```
    
  37. Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”
 
        ```
-        grep -r -l 'sec' | xargs -I '{}' cp '{}' /c/Users/anduser/terminal_hw_2/dir_1/inner_dir_1
+        grep -rl 'sec' | xargs -I '{}' cp '{}' inner_dir_1
        ```
    
  38. Команда в одну строку. Найти все строки c “sec” во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл.
 
        ```
-        grep -r -h 'sec' >> /c/Users/anduser/terminal_hw_2/tf_new.txt
+        grep -rh 'sec' >> tf_new.txt
        ```
    
  39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово “sec”
 
        ```
-        grep -r -l 'sec' | xargs rm -I
+        grep -rl 'sec' | xargs rm -I
        ```
     
  40. Просто вывести в терминал строку “Good job!!”
