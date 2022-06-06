@@ -31,10 +31,9 @@
         the first 1
         the second 2
         the third 3
-    
-      Ctrl+C
+        
+       Ctrl+C
      ```
-     
  7. Зайти в папку inner_dir_1
  
      `cd inner_dir_1`
