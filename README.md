@@ -26,7 +26,7 @@
     - the third 3
   
   ```
-  cat > tf_2.txt
+   cat > tf_2.txt
 
     the first 1
     the second 2
@@ -56,7 +56,6 @@
    
    
  10. Через cat добавить в текстовый файл tf_3.txt строку “the sec 2”
-
     `echo -e '\nthe sec 2' >> tf_3.txt`    
 
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
