@@ -181,69 +181,103 @@
    
  24. Найти строки в файлах где есть комбинация букв “sec” в любом регистре в текущей папке
 
-       `grep --exclude-dir=inner_dir_1 -r -i 'sec'`
+       ```
+        grep --exclude-dir=inner_dir_1 -r -i 'sec'
+       ```
    
  25. Найти строки в файлах где есть только комбинация букв “sec” в текущей папке
 
-       `grep --exclude-dir=inner_dir_1 -r '\<sec\>'`
+       ```
+        grep --exclude-dir=inner_dir_1 -r '\<sec\>'
+       ```
    
  26. Найти строки в файлах где есть только комбинация букв “sec” в любом регистре в текущей папке
   
-       `grep --exclude-dir=inner_dir_1 -r -i '\<sec\>'`
+       ```
+        grep --exclude-dir=inner_dir_1 -r -i '\<sec\>'
+       ```
    
  27. Найти строки в файлах где есть комбинация букв “second” в текущей папке
 
-       `grep --exclude-dir=inner_dir_1 -r 'second'`
+       ```
+        grep --exclude-dir=inner_dir_1 -r 'second'
+       ```
     
  28. Найти строки в файлах где есть комбинация букв “second” в любом регистре в текущей папке
 
-       `grep --exclude-dir=inner_dir_1 -r -i 'second'`
+       ```
+        grep --exclude-dir=inner_dir_1 -r -i 'second'
+       ```
      
  29. Найти строки в файлах где есть комбинация букв “second” во всех папках ниже уровнем
     
-       `grep --exclude-dir=dir_1 -r 'second'`
+       ```
+        grep --exclude-dir=dir_1 -r 'second'
+       ```
      
  30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке
 
-       `grep --exclude-dir=inner_dir_1 -r -l 'second'`
+       ```
+        grep --exclude-dir=inner_dir_1 -r -l 'second'
+       ```
      
  31. Найти все строки во всех файлах где нет комбинации “second”
 
-       `grep -r -v 'second'`
+       ```
+        grep -r -v 'second'
+       ```
      
  32. Найти только название и путь к файлам где нет комбинации “second”
     
-       `grep -r -v -l 'second'`
+       ```
+        grep -r -v -l 'second'
+       ```
    
  33. Вывести в терминал 4 последних строк любого текстового файла
    
-       `tail -n 4 tf_5.txt`
+       ```
+        tail -n 4 tf_5.txt
+       ```
     
  34. Вывести в терминал 4 первые строки любого текстового файла.
    
-       `head -n 4 tf_5.txt`
+       ```
+        head -n 4 tf_5.txt
+       ```
    
  35. Команда в одну строку. Создать папку и создать текстовый файл с содержиммым.
 
-       `mkdir inner_dir_2; echo 'hello world' > tf_6.txt`
+       ```
+        mkdir inner_dir_2; echo 'hello world' > tf_6.txt
+       ```
    
  36. Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”
 
-       `grep -r -l 'sec' | xargs -I '{}' mv '{}' /c/Users/anduser/terminal_hw_2/dir_1/inner_dir_2`
+       ```
+        grep -r -l 'sec' | xargs -I '{}' mv '{}' /c/Users/anduser/terminal_hw_2/dir_1/inner_dir_2
+       ```
    
  37. Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”
 
-       `grep -r -l 'sec' | xargs -I '{}' cp '{}' /c/Users/anduser/terminal_hw_2/dir_1/inner_dir_1`
+       ```
+        grep -r -l 'sec' | xargs -I '{}' cp '{}' /c/Users/anduser/terminal_hw_2/dir_1/inner_dir_1
+       ```
    
  38. Команда в одну строку. Найти все строки c “sec” во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл.
 
-       `grep -r -h 'sec' >> /c/Users/anduser/terminal_hw_2/tf_new.txt`
+       ```
+        grep -r -h 'sec' >> /c/Users/anduser/terminal_hw_2/tf_new.txt
+       ```
    
  39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово “sec”
 
-       `grep -r -l 'sec' | xargs rm -I`
+       ```
+        grep -r -l 'sec' | xargs rm -I
+       ```
     
  40. Просто вывести в терминал строку “Good job!!”
 
-       `echo 'Good job!!'`
+       ```
+        echo 'Good job!!'
+       ```
 
