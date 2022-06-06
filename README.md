@@ -1,15 +1,25 @@
 # GitBush_HW_2
 
  1. Сделать папку dir_1
+   
    `mkdir dir_1`
+   
  3. Зайти в папку dir_1
+   
    `cd dir_1`
+   
  3. Создать папку inner_dir_1
+   
    `mkdir inner_dir_1`
+   
  4. Посмотреть где ты находишься
-   `pwd`
+  
+  `pwd`
+  
  5. Находясь в папке dir_1 создать пустой текстовый файл tf_1.txt
-   `touch tf_1.txt`
+  
+  `touch tf_1.txt`
+  
  6. Находясь в папке dir_1 через команду cat создать текстовый файл tf_2.txt со следующими строками:
     - the first 1
     - the second 2
@@ -35,7 +45,9 @@
      any line 1
      any line 2
      any line 3
-     Ctrl+C
+     
+   Ctrl+C
+   
   ```
  9. Через cat добавить в текстовый файл tf_3.txt строку “the second 2”
    `echo -e '\nthe second 2' >> tf_3.txt`
