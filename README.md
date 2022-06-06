@@ -88,21 +88,25 @@
  12. Через cat добавить в текстовый файл tf_3.txt строку "the SeCoNd 2" 
  
         ```
-         cd inner_dir_1
-         echo -e '\nthe SeCoNd 2' >> tf_3.txt
+         cat >> tf_3.txt 
+         the SeCoNd 2
+         
+         Ctrl+C
         ```
     
  13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
    
         ```
-         cd ..
-         echo -e '\nthe seConD 2' >> tf_2.txt
+         cat >> tf_2.txt 
+         the seConD 2
+         
+         Ctrl+C
         ```
     
  14. Сделать текстовый файл tf_4.txt в котором будет 15 строк.
  
         ```
-         cat >> tf_4.txt
+         cat > tf_4.txt
            1
            2
            3
@@ -122,7 +126,7 @@
  15. Сделать текстовый файл tF_5.txt в котором будет 13 строк.
    
         ```
-         cat >> tf_5.txt
+         cat > tf_5.txt
            1
            2
            3
@@ -152,81 +156,79 @@
  18. Вывести содержимое файла tf_3.txt в терминал.
  
        ```
-        cd inner_dir_1
         cat tf_3.txt
        ```
     
  19. Найти путь к файлу tf_4.txt
 
        ```
-        find ~/terminal_hw_2 -name 'tf_4.txt'
+        realpath tf_4.txt
        ```
     
  20. Отчистить файл tf_4.txt от содержимого без удаления самого файла.
     
        ```
-        nano tf_4
-        Backspace + Ctrl+O + Enter + Ctrl+X
+        rm -r tf_4.txt
        ```
     
  21. Найти путь к файлам у которых есть  “tf” в названии.
    
        ```
-        find ~/terminal_hw_2 -name 'tf*'
+        find -name "tf*"
        ```
     
  22. Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре.
 
        ```
-        find ~/terminal_hw_2 -iname 'tf*'
+        find -iname "tf*"
        ```
    
  23. Найти строки в файлах где есть комбинация букв “sec” в текущей папке
 
        ```
-        grep --exclude-dir=inner_dir_1 -r 'sec'
+        grep -r "sec"
        ```
    
  24. Найти строки в файлах где есть комбинация букв “sec” в любом регистре в текущей папке
 
        ```
-        grep --exclude-dir=inner_dir_1 -r -i 'sec'
+        grep -ri "sec"
        ```
    
  25. Найти строки в файлах где есть только комбинация букв “sec” в текущей папке
 
        ```
-        grep --exclude-dir=inner_dir_1 -r '\<sec\>'
+        grep -r '\<sec\>'
        ```
    
  26. Найти строки в файлах где есть только комбинация букв “sec” в любом регистре в текущей папке
   
        ```
-        grep --exclude-dir=inner_dir_1 -r -i '\<sec\>'
+        grep -ri '\<sec\>'
        ```
    
  27. Найти строки в файлах где есть комбинация букв “second” в текущей папке
 
        ```
-        grep --exclude-dir=inner_dir_1 -r 'second'
+        grep -r "second"
        ```
     
  28. Найти строки в файлах где есть комбинация букв “second” в любом регистре в текущей папке
 
        ```
-        grep --exclude-dir=inner_dir_1 -r -i 'second'
+        grep  -ri "second"
        ```
      
  29. Найти строки в файлах где есть комбинация букв “second” во всех папках ниже уровнем
     
        ```
-        grep --exclude-dir=dir_1 -r 'second'
+        grep -r 'second'
        ```
      
  30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке
 
        ```
-        grep --exclude-dir=inner_dir_1 -r -l 'second'
+        grep -r -l 'second'
        ```
      
  31. Найти все строки во всех файлах где нет комбинации “second”
@@ -244,19 +246,20 @@
  33. Вывести в терминал 4 последних строк любого текстового файла
    
        ```
-        tail -n 4 tf_5.txt
+        tail -n4 tf_5.txt
        ```
     
  34. Вывести в терминал 4 первые строки любого текстового файла.
    
        ```
-        head -n 4 tf_5.txt
+        head -n4 tf_5.txt
        ```
    
  35. Команда в одну строку. Создать папку и создать текстовый файл с содержиммым.
 
        ```
-        mkdir inner_dir_2; echo 'hello world' > tf_6.txt
+        mkdir inner_dir_2; cat > tf_6.txt
+        hello world
        ```
    
  36. Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”
