@@ -1,25 +1,32 @@
 # GitBush_HW_2
 
  1. Создать папку dir_1
-   
-     `mkdir dir_1`
-   
+      ```
+        mkdir dir_1
+      ```
  3. Зайти в папку dir_1
    
-     `cd dir_1`
+      ```
+       cd dir_1
+      ```
    
  3. Создать папку inner_dir_1
    
-     `mkdir inner_dir_1`
+      ```
+       mkdir inner_dir_1
+      ```
    
  4. Посмотреть, где ты находишься
   
-     `pwd`
+      ```
+       pwd
+      ```
   
  5. Находясь в папке dir_1, создать пустой текстовый файл tf_1.txt
   
-     `touch tf_1.txt`
-  
+      ```
+       touch tf_1.txt
+      ```
  6. Находясь в папке dir_1, через команду cat создать текстовый файл tf_2.txt со следующими строками:
     - the first 1
     - the second 2
@@ -33,31 +40,35 @@
         the third 3
         
        Ctrl+C
-     ```
+      ```
  7. Зайти в папку inner_dir_1
  
-     `cd inner_dir_1`
+      ```
+       cd inner_dir_1
+      ```
  
  8. Через cat сделать текстовый файл tf_3.txt  c любыми строками
    
-      ```
-       cat > tf_3.txt
+       ```
+        cat > tf_3.txt
  
-         any line 1
-         any line 2
-         any line 3
+          any line 1
+          any line 2
+          any line 3
      
-       Ctrl+C
-     ```
+        Ctrl+C
+       ```
  9. Через cat добавить в текстовый файл tf_3.txt строку “the second 2”
    
-   
-       `echo -e '\nthe second 2' >> tf_3.txt`
-   
+       ```
+        echo -e '\nthe second 2' >> tf_3.txt`
+       ```
    
  10. Через cat добавить в текстовый файл tf_3.txt строку “the sec 2”
    
-       `echo -e '\nthe sec 2' >> tf_3.txt`    
+        ```
+         echo -e '\nthe sec 2' >> tf_3.txt
+        ```
 
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
  
@@ -120,11 +131,15 @@
        ```
  16. Вывести список всех файлов в папке.
 
-       `ls`
+       ```
+        ls
+       ```
 
  17. Выйти из папки inner_dir_1
  
-       `вышла из нее в п.13 с помощью команды cd ..`
+       ```
+        вышла из нее в п.13 с помощью команды cd ..
+       ```
    
  18. Вывести содержимое файла tf_3.txt в терминал.
  
@@ -135,7 +150,9 @@
     
  19. Найти путь к файлу tf_4.txt
 
-       `find ~/terminal_hw_2 -name 'tf_4.txt'`
+       ```
+        find ~/terminal_hw_2 -name 'tf_4.txt'
+       ```
     
  20. Отчистить файл tf_4.txt от содержимого без удаления самого файла.
     
@@ -146,15 +163,21 @@
     
  21. Найти путь к файлам у которых есть  “tf” в названии.
    
-       `find ~/terminal_hw_2 -name 'tf*'`
+       ```
+        find ~/terminal_hw_2 -name 'tf*'
+       ```
     
  22. Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре.
 
-       `find ~/terminal_hw_2 -iname 'tf*'`
+       ```
+        find ~/terminal_hw_2 -iname 'tf*'
+       ```
    
  23. Найти строки в файлах где есть комбинация букв “sec” в текущей папке
 
-       `grep --exclude-dir=inner_dir_1 -r 'sec'`
+       ```
+        grep --exclude-dir=inner_dir_1 -r 'sec'
+       ```
    
  24. Найти строки в файлах где есть комбинация букв “sec” в любом регистре в текущей папке
 
