@@ -1,6 +1,6 @@
 # GitBush_HW_2
 
- 1. Сделать папку dir_1
+ 1. Создать папку dir_1
    
    `mkdir dir_1`
    
@@ -12,15 +12,15 @@
    
    `mkdir inner_dir_1`
    
- 4. Посмотреть где ты находишься
+ 4. Посмотреть, где ты находишься
   
   `pwd`
   
- 5. Находясь в папке dir_1 создать пустой текстовый файл tf_1.txt
+ 5. Находясь в папке dir_1, создать пустой текстовый файл tf_1.txt
   
   `touch tf_1.txt`
   
- 6. Находясь в папке dir_1 через команду cat создать текстовый файл tf_2.txt со следующими строками:
+ 6. Находясь в папке dir_1, через команду cat создать текстовый файл tf_2.txt со следующими строками:
     - the first 1
     - the second 2
     - the third 3
@@ -36,7 +36,9 @@
   
   ```
  7. Зайти в папку inner_dir_1
-  `cd inner_dir_1`
+ 
+ `cd inner_dir_1`
+ 
  8. Через cat сделать текстовый файл tf_3.txt  c любыми строками
    
    ``` 
@@ -50,64 +52,84 @@
    
   ```
  9. Через cat добавить в текстовый файл tf_3.txt строку “the second 2”
+   
    `echo -e '\nthe second 2' >> tf_3.txt`
+   
  10. Через cat добавить в текстовый файл tf_3.txt строку “the sec 2”
-echo -e '\nthe sec 2' >> tf_3.txt
+
+   `echo -e '\nthe sec 2' >> tf_3.txt`
+
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
-cd ..
-echo -e '\nthe sec 3' >> tf_2.txt
+   `cd ..`
+   `echo -e '\nthe sec 3' >> tf_2.txt`
  12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
-cd inner_dir_1
-echo -e '\nthe SeCoNd 2' >> tf_3.txt
+   `cd inner_dir_1`
+   `echo -e '\nthe SeCoNd 2' >> tf_3.txt`
  13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
-cd ..
-echo -e '\nthe seConD 2' >> tf_2.txt
+   `cd ..`
+   `echo -e '\nthe seConD 2' >> tf_2.txt`
  14. Сделать текстовый файл tf_4.txt в котором будет 15 строк.
-cat >> tf_4.txt
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
+   ```
+    cat >> tf_4.txt
+      1
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      11
+      12
+      13
+      14
+      15
+   ```
  15. Сделать текстовый файл tF_5.txt в котором будет 13 строк.
-cat >> tf_5.txt
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
+   ```
+    cat >> tf_5.txt
+      1
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      11
+      12
+      13
+   ```
  16. Вывести список всех файлов в папке.
-ls
+
+`ls`
+
  17. Выйти из папки inner_dir_1
-вышел из нее в п.13
+ 
+   `вышела из нее в п.13 с помощью команды cd ..`
+   
  18. Вывести содержимое файла tf_3.txt в терминал.
-cd inner_dir_1
-cat tf_3.txt
+ 
+    `cd inner_dir_1`
+    `cat tf_3.txt`
+    
  19. Найти путь к файлу tf_4.txt
-find ~/terminal_hw_2 -name 'tf_4.txt'
+
+    `find ~/terminal_hw_2 -name 'tf_4.txt'`
+    
  20. Отчистить файл tf_4.txt от содержимого без удаления самого файла.
-nano tf_4
-Backspace + Ctrl+O + Enter + Ctrl+X
+   
+   `nano tf_4`
+    `Backspace + Ctrl+O + Enter + Ctrl+X`
+    
  21. Найти путь к файлам у которых есть  “tf” в названии.
-find ~/terminal_hw_2 -name 'tf*'
+   
+   `find ~/terminal_hw_2 -name 'tf*'`
+    
  22. Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре.
 find ~/terminal_hw_2 -iname 'tf*'
  23. Найти строки в файлах где есть комбинация букв “sec” в текущей папке
